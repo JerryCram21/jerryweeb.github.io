@@ -1,0 +1,207 @@
+*{
+	border: 1px solid rgba(0,0,0,0.6);
+	padding: 0;
+	margin: 0;
+
+}
+body, html{
+	width: 99%;
+	height: 100%;
+	margin: auto;
+}
+/*navbar start*/
+.nav{
+	background-color: red;
+}
+ul{
+	font-size: 50px;
+	text-align: right;
+	list-style-type:none;
+	padding: 0;
+	margin: 0;
+}
+li{
+	display: inline-block;
+}
+ul .me{
+	float: left;
+}
+/*navbar end*/
+
+/*section start*/
+.section{
+	width: 100%;
+	height: 100vh;
+	background-color: green;
+}
+.section-page{
+	width: 100%;
+	height: 90vh;
+	margin:10px auto;
+    background: aqua;
+    padding: 0;
+}
+h2{
+	width: 100%;
+	text-align: center;
+}
+/*section start*/
+/*section-page start*/
+.pic-1{
+	width: 35%;
+    height: 60vh;
+    margin:10vh 0 10vh 15px;
+    float: left;
+	background-image: url(../img/profile.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.info{
+	margin-left: 40%;
+	margin-top: 10vh;
+	width: 55%;
+    height: 60vh;
+    background: blue;
+}
+.info p{
+	margin: 20vh 0;
+}
+/*section-page end*/
+
+/*about me start*/
+.pic-2{
+	width: 35%;
+    height: 60vh;
+    margin:10vh 0 10vh 15px;
+    float: left;
+	background-image: url(../img/me.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*about me end*/
+
+/*Projects start*/
+.cont-proj{
+	width:100%;
+	height: 90vh;
+	background-color: orange;
+}
+.project{
+	width:22%;
+	height: 80vh;
+	margin: 10px 15px;
+	display: inline-block;
+	background-color: indigo;
+}
+.float{
+	float: left;
+}
+.proj{
+	width: 100%;
+	height: 30vh;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.proj-section{
+	width: 100%;
+	background-color: red;
+}
+.img-1{
+	background-color: yellow;
+	background-image: url(../img/paramore.png);	
+}
+.img-2{
+	background-image: url(../img/pba.png);
+	
+}
+.img-3{
+	background-image: url(../img/rex.png);
+	
+}
+.img-4{
+	background-image: url(../img/oasis.png);
+	
+}
+/*Projects end*/
+
+/*Contact start*/
+.container{
+	width: 90%;
+	height: 80vh;
+	margin: 20px 50px;
+	background-color: blue;
+	display: inline-block;
+}
+
+.contact{
+	width: 40%;
+	height: 60vh;
+	margin: 40px 50px;
+	background-color: red;
+	float: left;
+	display: inline-block;
+
+}
+.cont{
+	margin:15px 30px 20px 30px;
+	width: 30%;
+	height: 20vh;
+	float: left;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.cont1{
+	margin:15px 30px 20px 30px;
+	width: 30%;
+	height: 5vh;
+	float: left;
+}
+.gmail{
+	background-image: url(../img/gmail.png);
+}
+.phone{
+	background-image: url(../img/phone.png);
+}
+.fb{
+	background-image: url(../img/fb.png);
+}
+.github{
+	background-image: url(../img/github.png);
+}
+.twitter{
+	background-image: url(../img/twitter.png);
+}
+.ig{
+	background-image: url(../img/ig.png);
+}
+/*Contact end*/
+/*Parallax start*/
+.parallax-1{
+		background: url(../img/about_me.jpg) fixed 100%;
+		height: 75%;
+	}
+.parallax-2{
+		background: url(../img/smile.jpg) fixed 100%;
+		height: 75%;
+}
+.parallax-3{
+		background: url(../img/friends.jpg) fixed 100%;
+		height: 75%;
+}
+.parallax-inner{
+	padding: 80% auto;
+}
+h1{
+	padding: 80% auto;
+}
+/*Parallax end*/
+
+footer{
+	width: 100%;
+	text-align: center;
+}
