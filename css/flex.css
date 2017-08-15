@@ -9,12 +9,11 @@ body, html{
 	color: #111;
 	height: 100%;
 	font-size:18px;
-	max-width: 1280px;
+	max-width: 1280px; /*not sure*/
 }
 article{
 	padding: 0;
 	margin: 0;
-	min-height: 100%;
 }
 
 .info{
@@ -23,6 +22,7 @@ article{
 	text-align: center;
 	font-family: "AR BLANCA", Courier, monospace;
 	color: rgb(65, 131, 215);
+	height: 100vh;
 }
 .info div{
 	padding: 10px;
@@ -109,7 +109,7 @@ section{
 h2{
 	margin: 0;
 	padding-top:50px;
-	font-size: 10em;
+	font-size: 9em;
 	text-align: center;
 	font-family: 'Indie Flower', cursive;
 	text-transform: uppercase;
@@ -119,7 +119,7 @@ h2{
 /*about start*/
 .info1{
 	height: 100%;
-	padding: 0;
+	padding-bottom: 60px;
 	margin: 40px 10px;
 	font-size: 1.05em;
 }
@@ -143,7 +143,7 @@ h2{
 	margin: 0 40px;
 	font-family: 'Sedgwick Ave Display', cursive;
 }
-.group i:hover{
+.group i:hover , .proj-section i:hover{
 	color: #fff;
 }
 .pic img{
@@ -240,8 +240,8 @@ hr{
 	width: 40%;
 	height: 80vh;
 	margin-left: 40px;
-	margin-top: 0.75em;
-	/*background-color: orange;
+	/*margin-top: 0.75em;
+	background-color: orange;
 	border-right: 20px dotted red;*/
 }
 .inside-1{
@@ -279,17 +279,18 @@ i:hover{
 footer{
 	font-family: 'Zilla Slab Highlight', cursive;
 	text-align: center;
+	position: relative;
+	top: 20px;
 	padding-top:20px;
-	font-size: 3em;
+	font-size: 2.5em;
 }
 /* footer end*/
 
 @media only screen and(max-width:480px){
 
 }
-@media only screen and (min-width:480px) and (max-width:768px){
-	body{font-size: 8px;}
-	body{font-size: 12px;}
+@media only screen and (max-width:768px){
+	body{font-size: 10px;}
 	/*nav bar*/
 	ul{font-size: 3em;}
 	li{padding: 0 10px;}
@@ -298,23 +299,32 @@ footer{
 	.btn{font-size:2em;}
 	.what{font-size: 3.75em;}
 	/*parallax*/
-	h2{padding-top: 100px;font-size: 14em;}
+	h2{padding-top: 100px;font-size: 11em;}
 	/*about-me*/
 	.container-1{font-size: 1.075em;margin: 20px;}
-	.group{margin: auto;}
+	.group{margin: auto;font-size: 1.21em;}
 	.pic{margin: auto 10px;}
-	.group .down{position: relative;top: 35px;width: 100%;left: -150px;}
-	/*projects*/
+	.group .down{width: 265px;height: 340px;margin: 20px 0 0 0;}
+	/*projects
 	.container-2{width: 85%;margin: 0 7%;}
-	.project{background-color: green;display: inline-block;width: 35%;padding: 0 10px;border: 5px solid #000;margin: 0 20px;}	
+	.project{background-color: green;display: inline-block;width: 35%;padding: 0 10px;border: 5px solid #000;margin: 0 20px;}*/
+	.container-2{display: inline-block;}
+	.cont-project{margin: 0 10px;}
+	.project{border: 3px solid black;padding: 0 10px;margin:5px 20px;width: 40%;display: inline-block;}	
+	.proj-section p {font-size: 1.25em;}
+	.project h3{font-size: 1.75em}
+
 	/*contacts*/
 	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
 	.contact-me{width: 100%;font-size: 1.7em;margin: 0 auto;}
-	.title-1{width:100%; margin: 0 auto; font-size: 2.25em;}
-	.inside-1{margin: 0 5%;}
+	.title-1{margin: 0 auto; font-size: 2.25em;}
+	.inside-1{width: 100%;margin: 0px;float: none;}
 	.follow-me{margin: 0 auto;}
+
+	/*footer*/
+	footer{font-size: 3em;margin-top: 0px;}
 }
-@media only screen and (min-width:768px) and (max-width:1024px){
+@media only screen and (max-width:1024px) and (min-width: 769px){
 	body{font-size: 12px;}
 
 	/*nav bar*/
@@ -325,6 +335,7 @@ footer{
 	.name{font-size: 9.5em;margin-top: 100px;}
 	.btn{font-size:2em;}
 	.what{font-size: 3.75em;}
+	.info1{padding-bottom: 0px;}
 
 	/*parallax*/
 	h2{padding-top: 100px;font-size: 12em;}
@@ -343,17 +354,17 @@ footer{
 	.project h3{font-size: 1.75em}
 	
 	/*contacts*/
-	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
+	/*.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
 	.contact-me{width: 100%;font-size: 1.7em;margin: 0 auto;}
-	.title-1{width:60%; margin: 0 auto; font-size: 2.25em;}
-	.inside-1{margin: 0 5%;}
-	.inside-1 p{margin: 0;}
-	.follow-me{margin: 0 auto;}
+	.title-1{width:60%; margin: 0 auto; font-size: 2.25em;}*/
+	.inside-1{float: left; font-size: 1.3em;margin:0;width:100%;}
+	/*.inside-1 p{margin: 0;}
+	.follow-me{margin: 0 auto;}*/
 
 	/*footer*/
-	footer{font-size: 3em}
+	footer{font-size: 3.5em;margin-top: 20px;}
 }
-@media only screen and (min-width:1024px) and (max-width:1600px){
-	.container-2{
-	display: flex;}
+
+@media only screen and (max-width:1600px){
+	
 }
