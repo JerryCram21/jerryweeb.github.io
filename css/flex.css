@@ -9,7 +9,6 @@ body, html{
 	color: #111;
 	height: 100%;
 	font-size:18px;
-	max-width: 1280px; /*not sure*/
 }
 article{
 	padding: 0;
@@ -285,26 +284,23 @@ footer{
 	font-size: 2.5em;
 }
 /* footer end*/
-
-@media only screen and(max-width:480px){
-
-}
-@media only screen and (max-width:768px){
-	body{font-size: 10px;}
+@media only screen and (max-width:768px) and (min-width: 481px){
+	body{font-size: 12px;}
 	/*nav bar*/
-	ul{font-size: 3em;}
-	li{padding: 0 10px;}
+	ul{height: 80px;font-size: 3.25em;}
+	li{padding:10px;}
 	/*jerry's section*/
-	.name{font-size: 9.5em;margin-top: 100px;}
-	.btn{font-size:2em;}
-	.what{font-size: 3.75em;}
+	.name{margin-top: 300px;font-size: 10em;}
+	.btn{font-size: 2.5em;}
+	.what{font-size: 4em;}
 	/*parallax*/
-	h2{padding-top: 100px;font-size: 11em;}
+	h2{padding-top: 100px;font-size: 14em;}
 	/*about-me*/
 	.container-1{font-size: 1.075em;margin: 20px;}
 	.group{margin: auto;font-size: 1.21em;}
-	.pic{margin: auto 10px;}
+	.pic{margin: 60px 5px 0 0;height: 450px;width: 300px;}
 	.group .down{width: 265px;height: 340px;margin: 20px 0 0 0;}
+	.group p:last-child{width: 700px;left: -250px;}
 	/*projects
 	.container-2{width: 85%;margin: 0 7%;}
 	.project{background-color: green;display: inline-block;width: 35%;padding: 0 10px;border: 5px solid #000;margin: 0 20px;}*/
@@ -322,7 +318,7 @@ footer{
 	.follow-me{margin: 0 auto;}
 
 	/*footer*/
-	footer{font-size: 3em;margin-top: 0px;}
+	footer{font-size: 2.5em;margin-top: 0px;}
 }
 @media only screen and (max-width:1024px) and (min-width: 769px){
 	body{font-size: 12px;}
@@ -354,8 +350,8 @@ footer{
 	.project h3{font-size: 1.75em}
 	
 	/*contacts*/
-	/*.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
-	.contact-me{width: 100%;font-size: 1.7em;margin: 0 auto;}
+	.cont{margin:0 20px;}
+	/*.contact-me{width: 100%;font-size: 1.7em;margin: 0 auto;}
 	.title-1{width:60%; margin: 0 auto; font-size: 2.25em;}*/
 	.inside-1{float: left; font-size: 1.3em;margin:0;width:100%;}
 	/*.inside-1 p{margin: 0;}
