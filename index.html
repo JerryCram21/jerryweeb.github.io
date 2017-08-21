@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Web Portfolio</title>
+
+  
   <link href="css/flex.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Oswald|Zilla+Slab+Highlight" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -21,13 +23,11 @@
   </ul>
 </nav>
 
-  <article>
-    <div class="info" id="jerry">
+  <article class="info clearfix" id="jerry">
       <div class="name">JERRY MARC's</div>
       <hr>
       <div class="what">Personal Portfolio</div>
-      <div class="btn"><a href="#about-me">Get started</a></div>
-    </div>  
+      <div class="btn"><a href="#about-me">Get started</a></div> 
   </article>
 
 <!--2nd parallax-->
@@ -38,28 +38,29 @@
   </section>
 
 <!--about me section-->
-  <article>
-    <div id="about-me" class="info1">
-      <div class="container-1">
-      <div class="pic">
-      <img src="img/ako.jpg">
-      </div>
+  <article id="about-me" class="info1 clearfix">
+      <div class="container-1 clearfix">
+
+        <div class="pic">
+        <img src="image/ako.jpg">
+        </div>
+
         <div class="group">
           <p>
-          Hi! I'm Jerry Marc T. Hermoso, fresh graduate from  Angelicum College took up Bachelor of Science in Computer Science. 
+          Hi! I'm <i>Jerry Marc T. Hermoso</i>, 20 years old fresh college graduate from  Angelicum College took up BS in Computer Science and I'm an amateur <i>front end web developer.</i>
           </p><hr>
           <p>
-          I'am focused more on the client-side of the web and has very few ideas on how the server-side works. As of August 13,2017, I have a basic to intermediate knowledge in <i>HTML5, CSS3, JS, JQuery, Bootstrap, Github, AJAX, Responsive Web Design, and UX/UI Design</i>.
+          I'm focused more on the client-side of the web and has very few ideas on how the server-side works. I have a basic to intermediate knowledge in <i>HTML5, CSS3, JS, JQuery, Bootstrap, Github, AJAX, Responsive Web Design, and UX/UI Design</i>.
           </p><hr>
           <p>
-          I love creating, designing, giving effects to web pages from scratch, or with templates, or with psd designs. Hopefully to land a job that can use all of these skills and to grow and learn more in this path I chose.
+          I love creating, designing, giving effects to web pages from scratch, or with templates, or with psd designs.
           </p><hr>
           <p>
-          To introduce my web projects, scroll <a href="#projects">down</a> to see my history on making web pages.
+          My dream is to become a full stack web developer and be known in creating awesome and fancy websites.
           </p>
         </div>
-      </div> 
-    </div> 
+
+      </div>  
   </article>
 
 <!--2nd parallax-->
@@ -71,11 +72,10 @@
 
 
   <!--Projects page-->
-  <article>
-    <div id="projects" class="cont-proj">
+  <article id="projects" class="cont-proj clearfix">
       <div class="container-2">
 
-        <div class="project">
+        <div class="project proj-1">
           <h3>Fansite Website</h3>
           <div class="proj">
           <img src="img/paramore.png" alt="First ever website">
@@ -87,7 +87,7 @@
             </div>
         </div>
 
-        <div class="project">
+        <div class="project proj-2">
           <h3>PBA Informational Website</h3>
           <div class="proj">
           <img src="img/pba.png" alt="First website with database">
@@ -99,7 +99,7 @@
             </div>
         </div>
 
-        <div class="project">
+        <div class="project proj-3">
           <h3>A Responsive Web Page</h3>
           <div class="proj">
             <img src="img/rex.png" alt="First ever website">
@@ -110,7 +110,7 @@
               <h5><a href="https://jerrycram21.github.io/rexmiswifi.github.io/" target="_blank">VIEW MY WORK</a></h5>
             </div>
         </div>
-        <div class="project">
+        <div class="project proj-4">
           <h3>Thesis Project</h3>
           <div class="proj">
             <img src="img/oasis.png" alt="Oasis screenshots program">
@@ -122,7 +122,6 @@
             </div>
         </div>
       </div>
-    </div>
   </article>
 
 <!--3rd parallax-->
@@ -133,8 +132,7 @@
   </section>
 
   <!--Contact Me-->
-  <article>
-<div id="contact-me" class="container">
+  <article id="contact-me" class="container clearfix">
   <div class="contact">
     <div class="cont contact-me">
       <div class="title-1">
@@ -164,11 +162,10 @@
       </div>
     </div>
   </div>
-</div>
-<footer>
-    &copy Jerry Marc T. Hermoso | Portfolio Website | 2017
-</footer>
   </article>
+  <footer>
+    &copy Jerry Marc T. Hermoso • Portfolio Website • 2017
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
