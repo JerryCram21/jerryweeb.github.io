@@ -1,10 +1,12 @@
 *{
 	/*border: 1px solid rgba(0,0,0,0.9);*/
+	 box-sizing:border-box;
 }
 body, html{
 	margin: 0;
 	padding: 0;
-	font-family: 'Sedgwick Ave Display', sans-serif;
+	border: 0;
+	font-family: 'Sedgwick Ave Display', serif;
 	background-color: hsl(208, 50%, 75%);
 	color: #111;
 	height: 100%;
@@ -13,8 +15,16 @@ body, html{
 article{
 	padding: 0;
 	margin: 0;
+	width: 100%;
+	height: auto;
 }
-
+.clearfix:after {
+   content: " "; 
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
 .info{
 	display: flex;
 	flex-direction: column;
@@ -34,9 +44,11 @@ article{
 	font-size: 2.75em;
 	margin: 30px auto 30px auto;
 }
-.btn{
+.btn a{
 	width: 150px;
 	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #fff;
 	font-size:1.50em;
 	/*background-color: red;*/	
 }
@@ -46,6 +58,10 @@ a{
 }
 a:hover{
 	color: #111;
+}
+.btn a:hover{
+	color: #111;
+	border-color: #111;
 }
 /* nav start */
 nav{
@@ -87,7 +103,7 @@ section{
 	padding: 0;
 	margin: 0;
 	border: 0;
-	height: 65% !important;
+	height: 65%;
 }
 .parallax-1{
 	background: url("../img/about_me.jpg")fixed 100%;
@@ -116,22 +132,18 @@ h2{
 }
 /*parallax end*/
 /*about start*/
-.info1{
-	height: 100%;
-	padding-bottom: 60px;
-	margin: 40px 10px;
-	font-size: 1.05em;
-}
 .container-1{
-    display: flex;
+    margin: 20px 0px;
 }
 .pic{
 	width: 30%;
 	height: 25em;
-	margin: auto;
+	margin: auto 10px;
+	float: left;
 }
 .group{
-	width: 70%;
+	width: 65%;
+	float: left;
 	/*background-color: indigo;*/
 }
 .group p{
@@ -152,11 +164,6 @@ h2{
 	border-radius: 30%;
 	z-index: -2;
 }
-.group p:last-child{
-	position: relative;
-	top: 30px;
-	left: -80px;
-}
 hr{
 	width: 50%;
 }
@@ -164,10 +171,10 @@ hr{
 
 /* projects start*/
 .cont-proj{
-	margin: 40px 10px;
+	margin: 40px 0px;
 }
 .container-2{
-	display: flex;
+	width: 100%;
 	font-size: 1.075em;
 }
 .project{
@@ -187,8 +194,9 @@ hr{
 	margin: 0 10px;
 	font-size: 20px;
 }
-.proj{
-	width: 100%;
+.proj-1 , .proj-2, .proj-3 , .proj-4{
+	width: 23%;
+	float: left;
 }
 .proj-section p{
 	font-size: 0.9em;
@@ -210,21 +218,24 @@ hr{
 /*contact start*/
 .container{
 	font-family: 'Sedgwick Ave Display', cursive;
-	display: inline-block;
 }
 .contact{
-	height: 100%;
+	height: auto;
 	width: 100%;
-	/*background-color: green;*/
+	
 	padding: 0;
 	margin: 0;
 	font-size: 1.7em;
 }
 .cont{
-	display: inline-block;
-	margin: 0 52px;
-	width: 40%;
+	width: 100%;
+	height: auto;
 	text-align: center;
+	/*background-color: green;*/
+}
+.contact-me , .follow-me{
+	width: 50%;
+	float: left;
 }
 .title-1 h4{
 	font-family: "AR BLANCA", Courier, monospace;
@@ -236,10 +247,10 @@ hr{
     border-radius: 50%;
 }
 .contact-me{
-	width: 40%;
+	/*width: 40%;
 	height: 80vh;
 	margin-left: 40px;
-	/*margin-top: 0.75em;
+	margin-top: 0.75em;
 	background-color: orange;
 	border-right: 20px dotted red;*/
 }
@@ -247,10 +258,6 @@ hr{
 	/*background-color: white;*/
 	margin: -20px 80px 0px 20px;
 	float: left;
-	width: 90%;
-}
-.cont-1{
-	display: inline-block;
 }
 .title-1{
 	width: 100%;
@@ -345,7 +352,7 @@ footer{
 	/*projects*/
 	.container-2{display: inline-block;}
 	.cont-project{margin: 0 10px;}
-	.project{border: 3px solid black;padding: 0 10px;margin:5px 30px;width: 40%;display: inline-block;}	
+	.project{border: 3px solid black;padding: 0 30px;margin: 5px 70px;width: 35%;display: inline-block;}	
 	.proj-section p {font-size: 1.25em;}
 	.project h3{font-size: 1.75em}
 	
@@ -354,6 +361,7 @@ footer{
 	/*.contact-me{width: 100%;font-size: 1.7em;margin: 0 auto;}
 	.title-1{width:60%; margin: 0 auto; font-size: 2.25em;}*/
 	.inside-1{float: left; font-size: 1.3em;margin:0;width:100%;}
+	.contact-me, .follow-me {width: 45%;}
 	/*.inside-1 p{margin: 0;}
 	.follow-me{margin: 0 auto;}*/
 
