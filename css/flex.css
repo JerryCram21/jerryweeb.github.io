@@ -290,24 +290,77 @@ footer{
 	padding-top:20px;
 	font-size: 2.5em;
 }
+
+nav , .menu , li{
+	display: none;
+}
 /* footer end*/
+@media only screen and (max-width:480px){
+	body{font-size: 10px;}
+	/*nav bar*/
+	nav{display: none;}
+	.menu{display:block;width: 100%;height: 50px;background-color: brown;}
+	.mob-nav{height: 50px;width: 50px;float: right;margin-right: 10px;}
+	ul .menu-nav{background-color: brown;height: 150px;width: 100%;height: auto;background-color: red;display: none;}
+	li:first-child{float: none;}
+	li{display: block;list-style: none;text-align: right;font-size: 30px;border-top: 1px solid rgb(65, 131, 215);}
+	/*jerry's section*/
+	.name{margin-top: 50px;font-size: 9em;}
+	.btn{font-size: 2.5em;}
+	.btn a{font-size: .75em;}
+	.what{font-size: 3em;}
+	/*parallax*/
+	h2{padding-top: 50px;font-size: 6em;}
+	.parallax-1 , .parallax-2 , .parallax-3{background-repeat: round;background-position: left;}
+	.parallax{height: 45%;}
+	/*about-me*/
+	.container-1{font-size: 1.075em;margin: 20px;}
+	.group{font-size: .85em;width: 100%;display: block;}
+	.pic{width: 200px;height: 200px;margin: 5px auto;float: none;}
+	.group .down{width: 265px;height: 340px;margin: 20px 0 0 0;}
+	
+	/*projects
+	.container-2{width: 85%;margin: 0 7%;}
+	.project{background-color: green;display: inline-block;width: 35%;padding: 0 10px;border: 5px solid #000;margin: 0 20px;}*/
+	.container-2{display: block;margin: 0 auto;}
+	.cont-project{margin: 0 10px;}
+	.project{border: 3px solid black;padding: 0 10px;width: 100%;display: block;margin: 5px auto;}	
+	.proj-section p {font-size: 1.25em;}
+	.project h3{font-size: 1.75em}
+
+	/*contacts*/
+	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
+	.contact-me{width: 100%;font-size: 1em;margin: 0 auto;}
+	.title-1{margin: 0 auto; font-size: 2.25em;}
+	.inside-1{width: 100%;margin: 0px;float: none;}
+	.follow-me{margin: 0 auto;width: 100%;font-size: 1em;}
+	h4{width: 60%;}
+
+	/*footer*/
+	footer{font-size: 1.45em;margin-top: 0px;}
+}
 @media only screen and (max-width:768px) and (min-width: 481px){
 	body{font-size: 12px;}
 	/*nav bar*/
-	ul{height: 80px;font-size: 3.25em;}
-	li{padding:10px;}
+	nav{display: none;}
+	.menu{display:block;width: 100%;height: 50px;background-color: brown;}
+	.mob-nav{height: 50px;width: 50px;float: right;margin-right: 10px;}
+	ul .menu-nav{background-color: brown;height: 150px;width: 100%;height: auto;background-color: red;display: none;}
+	li:first-child{float: none;}
+	li{display: block;list-style: none;text-align: right;font-size: 30px;border-top: 1px solid rgb(65, 131, 215);}
 	/*jerry's section*/
-	.name{margin-top: 300px;font-size: 10em;}
+	.name{margin-top: 50px;font-size: 9em;}
 	.btn{font-size: 2.5em;}
-	.what{font-size: 4em;}
+	.btn a{font-size: .75em;}
+	.what{font-size: 3em;}
 	/*parallax*/
-	h2{padding-top: 100px;font-size: 14em;}
+	h2{padding-top: 100px;font-size: 8em;}
 	/*about-me*/
 	.container-1{font-size: 1.075em;margin: 20px;}
-	.group{margin: auto;font-size: 1.21em;}
-	.pic{margin: 60px 5px 0 0;height: 450px;width: 300px;}
+	.group{width:55%;margin: auto;font-size: 1em;}
+	.pic{margin: 20px 5px 0 0;height: 450px;width: 300px;}
 	.group .down{width: 265px;height: 340px;margin: 20px 0 0 0;}
-	.group p:last-child{width: 700px;left: -250px;}
+	
 	/*projects
 	.container-2{width: 85%;margin: 0 7%;}
 	.project{background-color: green;display: inline-block;width: 35%;padding: 0 10px;border: 5px solid #000;margin: 0 20px;}*/
@@ -319,7 +372,7 @@ footer{
 
 	/*contacts*/
 	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
-	.contact-me{width: 100%;font-size: 1.7em;margin: 0 auto;}
+	.contact-me{width: 100%;font-size: 1.5em;margin: 0 auto;}
 	.title-1{margin: 0 auto; font-size: 2.25em;}
 	.inside-1{width: 100%;margin: 0px;float: none;}
 	.follow-me{margin: 0 auto;}
@@ -367,8 +420,4 @@ footer{
 
 	/*footer*/
 	footer{font-size: 3.5em;margin-top: 20px;}
-}
-
-@media only screen and (max-width:1600px){
-	
 }
