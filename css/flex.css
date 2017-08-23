@@ -291,16 +291,17 @@ footer{
 	font-size: 2.5em;
 }
 
-nav , .menu , li{
+.menu li , .mob-nav{
 	display: none;
 }
+/*.menu li , .mob-nav{display: block;}*/
 /* footer end*/
 @media only screen and (max-width:480px){
 	body{font-size: 10px;}
 	/*nav bar*/
 	nav{display: none;}
 	.menu{display:block;width: 100%;height: 50px;background-color: brown;}
-	.mob-nav{height: 50px;width: 50px;float: right;margin-right: 10px;}
+	.mob-nav{display: block;height: 50px;width: 50px;float: right;margin-right: 10px;}
 	ul .menu-nav{background-color: brown;height: 150px;width: 100%;height: auto;background-color: red;display: none;}
 	li:first-child{float: none;}
 	li{display: block;list-style: none;text-align: right;font-size: 30px;border-top: 1px solid rgb(65, 131, 215);}
@@ -344,7 +345,7 @@ nav , .menu , li{
 	/*nav bar*/
 	nav{display: none;}
 	.menu{display:block;width: 100%;height: 50px;background-color: brown;}
-	.mob-nav{height: 50px;width: 50px;float: right;margin-right: 10px;}
+	.mob-nav{display:block;height: 50px;width: 50px;float: right;margin-right: 10px;}
 	ul .menu-nav{background-color: brown;height: 150px;width: 100%;height: auto;background-color: red;display: none;}
 	li:first-child{float: none;}
 	li{display: block;list-style: none;text-align: right;font-size: 30px;border-top: 1px solid rgb(65, 131, 215);}
