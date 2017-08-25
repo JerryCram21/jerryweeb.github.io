@@ -52,5 +52,9 @@ $(document).ready(function(){
 			);
 	});
 */
+	$(".mob-nav").click(function() {
+      $(".menu-nav").slideToggle();
+    });
+});
 });
 
