@@ -6,9 +6,10 @@ body, html{
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: 'Sedgwick Ave Display', serif;
-	background-color: hsl(208, 50%, 75%);
-	color: #111;
+	font-family: 'Sedgwick Ave Display', sans-serif;
+    background-color: #001f3f;
+    color: rgb(133, 185, 239);
+    /*color: #70d7ff;*/
 	height: 100%;
 	font-size:18px;
 }
@@ -26,15 +27,18 @@ article{
    clear: both;
 }
 .info{
-	display: flex;
-	flex-direction: column;
+	/*display: flex;
+	flex-direction: column;*/
 	text-align: center;
-	font-family: "AR BLANCA", Courier, monospace;
-	color: rgb(65, 131, 215);
+	font-family: "AR BLANCA", Courier, sans-serif;
+	color: #ECECC6;
 	height: 100vh;
 }
 .info div{
 	padding: 10px;
+}
+.info .first{
+height: auto;
 }
 .name{
 	font-size: 7em;
@@ -54,10 +58,10 @@ article{
 }
 a{
 	text-decoration: none;
-	color: #fff;
+	color: #ccc;
 }
 a:hover{
-	color: #111;
+	color: #dddc00;
 }
 .btn a:hover{
 	color: #111;
@@ -67,6 +71,7 @@ a:hover{
 nav{
 	position: fixed;
 	width: 100%;
+	height: 10vh;
 	background-color: hsl(208, 90%, 30%);
 	padding: 2px;
 	margin: 0;
@@ -83,11 +88,14 @@ ul{
 	font-size: 2em;
 	margin: 0;
 	padding: 0;
+	height: 100%;
+    font-size: 2.5em;
 }
 li{
 	display: inline-block;
-	padding: 0 20px;
-	font-family: 'Lobster', cursive;
+	padding: 1px 20px;
+	font-family: 'Lobster', sans-serif;
+	font-size: 100%;
 }
 li:first-child{
 	float: left;
@@ -107,7 +115,7 @@ section{
 }
 .parallax-1{
 	background: url("../img/about_me.jpg")fixed 100%;
-	background-repeat: no-repeat;
+	background-repeat: center;
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -126,7 +134,7 @@ h2{
 	padding-top:50px;
 	font-size: 9em;
 	text-align: center;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Indie Flower', sans-serif;
 	text-transform: uppercase;
 	color: hsl(60, 50%, 85%);
 }
@@ -141,24 +149,18 @@ h2{
 	margin: auto 10px;
 	float: left;
 }
-.group{
-	width: 65%;
-	float: left;
-	/*background-color: indigo;*/
-}
+
 .group p{
 	font-size: 1.40em;
-	/*background-color: yellow;*/
-	text-align: left;
-	padding: 0;
-	margin: 0 40px;
-	font-family: 'Sedgwick Ave Display', cursive;
+    padding: 0;
+    font-family: 'Sedgwick Ave Display', sans-serif;
+    margin-left: 31%;
+    margin-right: 10px;
 }
 .group i:hover , .proj-section i:hover{
 	color: #fff;
 }
 .pic img{
-	flex: 1;
 	height: 100%;
 	width: 100%;
 	border-radius: 30%;
@@ -178,7 +180,7 @@ hr{
 	font-size: 1.075em;
 }
 .project{
-	border: 3px solid black;
+	border: 3px solid #dddc00;
 	padding: 0 10px;
 	margin: 0 10px;
 }
@@ -199,15 +201,15 @@ hr{
 	float: left;
 }
 .proj-section p{
-	font-size: 0.9em;
+	font-size: 1em;
 }
 .proj img{
 	height: 100%;
 	width: 100%;
 }
 .foot{
-	margin: 2px;
-	border: 3px solid rgba(9,9,9,0.6);
+	padding: 20px;
+	border-top: 3px solid rgba(9,9,9,0.6);
 }
 .foot h3{
 	padding: 0;
@@ -217,15 +219,14 @@ hr{
 
 /*contact start*/
 .container{
-	font-family: 'Sedgwick Ave Display', cursive;
+	font-family: 'Sedgwick Ave Display', sans-serif;
 }
 .contact{
 	height: auto;
 	width: 100%;
-	
 	padding: 0;
 	margin: 0;
-	font-size: 1.7em;
+	font-size: 1.85em;
 }
 .cont{
 	width: 100%;
@@ -238,7 +239,7 @@ hr{
 	float: left;
 }
 .title-1 h4{
-	font-family: "AR BLANCA", Courier, monospace;
+	font-family: "AR BLANCA", Courier, sans-serif;
 	color: rgb(65, 131, 215);
 	margin: 40px auto;
 	width: 80%;
@@ -255,9 +256,8 @@ hr{
 	border-right: 20px dotted red;*/
 }
 .inside-1{
-	/*background-color: white;*/
-	margin: -20px 80px 0px 20px;
-	float: left;
+	width: 90%;
+    margin: 0 auto;
 }
 .title-1{
 	width: 100%;
@@ -275,98 +275,108 @@ hr{
 .fa-instagram:hover{
 	color:#262626;
 }
-i:hover{
-	color: #000;
+i{
+	color: #ECECC6;
 }
 
 /*contact end*/
 
 /* footer start*/
 footer{
-	font-family: 'Zilla Slab Highlight', cursive;
 	text-align: center;
-	position: relative;
-	top: 20px;
-	padding-top:20px;
-	font-size: 2.5em;
+    /* position: relative; */
+    /* top: 20px; */
+    padding: 15px 0;
+    font-size: 2em;
+    color: #ECECC6;
+    background-color: gray;
 }
 
-nav , .menu , li{
+.menu li , .mob-nav{
 	display: none;
 }
+/*.menu li , .mob-nav{display: block;}*/
 /* footer end*/
-@media only screen and (max-width:480px){
-	body{font-size: 10px;}
+@media only screen and (max-width:320px){
+	body{font-size: 6px;}
 	/*nav bar*/
 	nav{display: none;}
-	.menu{display:block;width: 100%;height: 50px;background-color: brown;}
-	.mob-nav{height: 50px;width: 50px;float: right;margin-right: 10px;}
-	ul .menu-nav{background-color: brown;height: 150px;width: 100%;height: auto;background-color: red;display: none;}
+	.menu{display:block;width: 100%;height: 30px;background-color: rgba(211, 212, 233, 0.46);}
+	.mob-nav{display:block;height: 30px;width: 30px;float: right;margin-right: 10px;}
+	.menu-nav{width: 100%;height: auto;}
 	li:first-child{float: none;}
-	li{display: block;list-style: none;text-align: right;font-size: 30px;border-top: 1px solid rgb(65, 131, 215);}
+	li{display: block;list-style: none;text-align: right; font-size: 1.25em;border-top: 1px solid rgb(65, 131, 215);}
 	/*jerry's section*/
-	.name{margin-top: 50px;font-size: 9em;}
-	.btn{font-size: 2.5em;}
+	.name{margin-top: 40px;font-size: 6em;}
+	.btn{font-size: 2em;}
 	.btn a{font-size: .75em;}
 	.what{font-size: 3em;}
 	/*parallax*/
 	h2{padding-top: 50px;font-size: 6em;}
-	.parallax-1 , .parallax-2 , .parallax-3{background-repeat: round;background-position: left;}
-	.parallax{height: 45%;}
+	.parallax{height: 40%;}
+	.parallax-1 , .parallax-3{background-repeat: round;background-position: left;}
 	/*about-me*/
 	.container-1{font-size: 1.075em;margin: 20px;}
 	.group{font-size: .85em;width: 100%;display: block;}
-	.pic{width: 200px;height: 200px;margin: 5px auto;float: none;}
-	.group .down{width: 265px;height: 340px;margin: 20px 0 0 0;}
+	.pic{width: 100px;height: 150px;margin: 5px auto;float: none;}
+	.group p{width: 100%;margin: 10px;font-size: 2em;}
+	/*.group{font-size: 1.25em;}
+	.pic{height: 400px;width: 250px;margin-top: 100px;margin-right: 10px;}
+	.group .down{width: 265px;height: 340px;margin: 20px 0 0 0;}*/
 	
 	/*projects
 	.container-2{width: 85%;margin: 0 7%;}
 	.project{background-color: green;display: inline-block;width: 35%;padding: 0 10px;border: 5px solid #000;margin: 0 20px;}*/
-	.container-2{display: block;margin: 0 auto;}
+	.container-2{margin: 0 auto;}
 	.cont-project{margin: 0 10px;}
-	.project{border: 3px solid black;padding: 0 10px;width: 100%;display: block;margin: 5px auto;}	
-	.proj-section p {font-size: 1.25em;}
+	.project{width: 90%;display: block;margin: 10px 15px;}	
+	.proj-section p {font-size: 2em;}
 	.project h3{font-size: 1.75em}
 
 	/*contacts*/
 	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
-	.contact-me{width: 100%;font-size: 1em;margin: 0 auto;}
+	.contact-me{width: 100%;font-size: 1.5em;margin: 0 auto;}
 	.title-1{margin: 0 auto; font-size: 2.25em;}
 	.inside-1{width: 100%;margin: 0px;float: none;}
-	.follow-me{margin: 0 auto;width: 100%;font-size: 1em;}
-	h4{width: 60%;}
+	.follow-me{margin: 0 auto;}
 
 	/*footer*/
-	footer{font-size: 1.45em;margin-top: 0px;}
+	footer{font-size: 2.5em;margin-top: 0px;}
 }
-@media only screen and (max-width:768px) and (min-width: 481px){
+
+@media only screen and (max-width:480px) and (min-width: 321px){
 	body{font-size: 12px;}
 	/*nav bar*/
 	nav{display: none;}
-	.menu{display:block;width: 100%;height: 50px;background-color: brown;}
-	.mob-nav{height: 50px;width: 50px;float: right;margin-right: 10px;}
-	ul .menu-nav{background-color: brown;height: 150px;width: 100%;height: auto;background-color: red;display: none;}
+	.menu{display:block;width: 100%;height: 50px;background-color: rgba(211, 212, 233, 0.46);}
+	.mob-nav{display:block;height: 50px;width: 50px;float: right;margin-right: 10px;}
+	.menu-nav{width: 100%;height: auto;}
 	li:first-child{float: none;}
-	li{display: block;list-style: none;text-align: right;font-size: 30px;border-top: 1px solid rgb(65, 131, 215);}
+	li{display: block;list-style: none;text-align: right; font-size: 1.25em;border-top: 1px solid rgb(65, 131, 215);}
 	/*jerry's section*/
-	.name{margin-top: 50px;font-size: 9em;}
-	.btn{font-size: 2.5em;}
+	.name{margin-top: 100px;font-size: 6em;}
+	.btn{font-size: 2em;}
 	.btn a{font-size: .75em;}
 	.what{font-size: 3em;}
 	/*parallax*/
-	h2{padding-top: 100px;font-size: 8em;}
+	h2{padding-top: 50px;font-size: 6em;}
+	.parallax{height: 40%;}
+	.parallax-1 , .parallax-3{background-repeat: round;background-position: left;}
 	/*about-me*/
 	.container-1{font-size: 1.075em;margin: 20px;}
-	.group{width:55%;margin: auto;font-size: 1em;}
-	.pic{margin: 20px 5px 0 0;height: 450px;width: 300px;}
-	.group .down{width: 265px;height: 340px;margin: 20px 0 0 0;}
+	.group{font-size: .85em;width: 100%;display: block;}
+	.pic{width: 200px;height: 250px;margin: 5px auto;float: none;}
+	.group p{width: 100%;margin: 10px;font-size: 2em;}
+	/*.group{font-size: 1.25em;}
+	.pic{height: 400px;width: 250px;margin-top: 100px;margin-right: 10px;}
+	.group .down{width: 265px;height: 340px;margin: 20px 0 0 0;}*/
 	
 	/*projects
 	.container-2{width: 85%;margin: 0 7%;}
 	.project{background-color: green;display: inline-block;width: 35%;padding: 0 10px;border: 5px solid #000;margin: 0 20px;}*/
-	.container-2{display: inline-block;}
+	.container-2{margin: 0 auto;}
 	.cont-project{margin: 0 10px;}
-	.project{border: 3px solid black;padding: 0 10px;margin:5px 20px;width: 40%;display: inline-block;}	
+	.project{width: 90%;display: block;margin: 10px 20px;}	
 	.proj-section p {font-size: 1.25em;}
 	.project h3{font-size: 1.75em}
 
@@ -380,6 +390,54 @@ nav , .menu , li{
 	/*footer*/
 	footer{font-size: 2.5em;margin-top: 0px;}
 }
+
+@media only screen and (max-width:768px) and (min-width: 481px){
+	body{font-size: 12px;}
+	/*nav bar*/
+	nav{display: none;}
+	.menu{display:block;width: 100%;height: 50px;background-color: rgba(211, 212, 233, 0.46);}
+	.mob-nav{display:block;height: 50px;width: 50px;float: right;margin-right: 10px;}
+	.menu-nav{width: 100%;height: auto;}
+	li:first-child{float: none;}
+	li{display: block;list-style: none;text-align: right;font-size: 1.5em;border-top: 1px solid rgb(65, 131, 215);}
+	/*jerry's section*/
+	.name{margin-top: 200px;font-size: 9em;}
+	.btn{font-size: 3em;}
+	.btn a{font-size: .75em;}
+	.what{font-size: 4em;}
+	/*parallax*/
+	h2{padding-top: 100px;font-size: 8em;}
+	.parallax-1{background-repeat:round;background-position: left;}
+	.parallax{height: 50%;}
+	/*about-me*/
+	.container-1{font-size: 1.075em;margin: 20px;}
+	.group{font-size: .85em;width: 100%;display: block;}
+	.pic{width: 300px;height: 250px;margin: 5px auto;float: none;}
+	.group p{width: 100%;margin: 10px;font-size: 2em;}
+	/*.group{font-size: 1.25em;}
+	.pic{height: 400px;width: 250px;margin-top: 100px;margin-right: 10px;}
+	.group .down{width: 265px;height: 340px;margin: 20px 0 0 0;}*/
+	
+	/*projects
+	.container-2{width: 85%;margin: 0 7%;}
+	.project{background-color: green;display: inline-block;width: 35%;padding: 0 10px;border: 5px solid #000;margin: 0 20px;}*/
+	.container-2{display: inline-block;}
+	.cont-project{margin: 0 10px;}
+	.project{border: 3px solid black;padding: 0 10px;margin:5px 20px;width: 40%;display: inline-block;}	
+	.proj-section p {font-size: 1.55em;}
+	.project h3{font-size: 1.75em}
+
+	/*contacts*/
+	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
+	.contact-me{width: 100%;font-size: 1.5em;margin: 0 auto;}
+	.title-1{margin: 0 auto; font-size: 2.25em;}
+	.inside-1{width: 100%;margin: 0px;float: none;}
+	.follow-me{margin: 0 auto;}
+
+	/*footer*/
+	footer{font-size: 2.5em;margin-top: 0px;}
+}
+
 @media only screen and (max-width:1024px) and (min-width: 769px){
 	body{font-size: 12px;}
 
@@ -395,18 +453,99 @@ nav , .menu , li{
 
 	/*parallax*/
 	h2{padding-top: 100px;font-size: 12em;}
+	.parallax-1{background-repeat: round;background-position: left;}
 
 	/*about-me*/
 	.container-1{margin: 20px;}
 	.group{margin: auto; font-size: 1.25em}
-	.pic{margin: auto 10px;}
+	.pic{margin: 50px 10px;}
 	.group .down{position: relative;top: 35px;width: 100%;left: -150px;}
 
 	/*projects*/
 	.container-2{display: inline-block;}
 	.cont-project{margin: 0 10px;}
-	.project{border: 3px solid black;padding: 0 30px;margin: 5px 70px;width: 35%;display: inline-block;}	
+	.project{border: 3px solid black;padding: 0 30px;margin-left: 80px;width: 35%;display: inline-block;}	
 	.proj-section p {font-size: 1.25em;}
+	.project h3{font-size: 1.75em}
+	
+	/*contacts*/
+	.cont{margin:0 20px;}
+	/*.contact-me{width: 100%;font-size: 1.7em;margin: 0 auto;}
+	.title-1{width:60%; margin: 0 auto; font-size: 2.25em;}*/
+	.inside-1{float: left; font-size: 1.3em;margin:0;width:100%;}
+	.contact-me, .follow-me {width: 45%;}
+	/*.inside-1 p{margin: 0;}
+	.follow-me{margin: 0 auto;}*/
+
+	/*footer*/
+	footer{font-size: 3.5em;margin-top: 20px;}
+}
+
+@media only screen and (max-width:1900px) and (min-width: 1600px){
+	body{font-size: 14px;}
+
+	/*nav bar*/
+	ul{font-size: 4em;}
+	li{padding: 0 10px;}
+
+	/*jerry's section*/
+	.info .firs{height: auto;margin: 0 auto;}
+	.name{font-size: 10em;margin-top: 200px;}
+	.btn{font-size:2em;}
+	.what{font-size: 4.25em;}
+	.info1{padding-bottom: 0px;}
+
+	/*parallax*/
+	h2{padding-top: 100px;font-size: 13em;}
+	
+
+	/*about-me*/
+	.container-1{margin: 20px;}
+	.group{margin: auto; font-size: 1.5em}
+	.pic{margin: 40px 10px;width: 400px;height: 500px;}
+
+	/*projects*/
+	.proj-section p {font-size: 1.5em;}
+	.project h3{font-size: 1.75em}
+	
+	/*contacts*/
+	.cont{margin:0 20px;}
+	/*.contact-me{width: 100%;font-size: 1.7em;margin: 0 auto;}
+	.title-1{width:60%; margin: 0 auto; font-size: 2.25em;}*/
+	.inside-1{float: left; font-size: 1.3em;margin:0;width:100%;}
+	.contact-me, .follow-me {width: 45%;}
+	/*.inside-1 p{margin: 0;}
+	.follow-me{margin: 0 auto;}*/
+
+	/*footer*/
+	footer{font-size: 3.5em;margin-top: 20px;}
+}
+
+@media only screen and (min-width:1901px){
+	body{font-size: 16px;}
+
+	/*nav bar*/
+	ul{font-size: 4em;}
+	li{padding: 0 10px;}
+
+	/*jerry's section*/
+	.info .firs{height: auto;margin: 0 auto;}
+	.name{font-size: 10em;margin-top: 200px;}
+	.btn{font-size:2em;}
+	.what{font-size: 4.25em;}
+	.info1{padding-bottom: 0px;}
+
+	/*parallax*/
+	h2{padding-top: 100px;font-size: 13em;}
+	
+
+	/*about-me*/
+	.container-1{margin: 20px;}
+	.group{margin: auto; font-size: 1.5em}
+	.pic{margin: 40px 10px;width: 400px;height: 500px;}
+
+	/*projects*/
+	.proj-section p {font-size: 1.5em;}
 	.project h3{font-size: 1.75em}
 	
 	/*contacts*/
