@@ -40,6 +40,8 @@ $(document).ready(function(){
 
   })();
 
+
+	})();
 /*
   $('.read').on('click',function(){
     if ('.more-1' = '.hidden') {
@@ -52,6 +54,7 @@ $(document).ready(function(){
       );
   });
 */
+
   //nav menu for small devices
   $(".mob-nav").click(function() {
       $(".menu-nav").slideToggle();
@@ -81,6 +84,9 @@ $(document).ready(function(){
         }else{
           $btt.hide();
         }
-  });
+
+  $(".mob-nav").click(function() {
+      $(".menu-nav").slideToggle();
+    });
 });
 
