@@ -171,6 +171,17 @@ hr{
 }
 /*about end*/
 
+/*go to top start*/
+.go-top img{
+	width: 80px;
+	height: 50px;
+	position: fixed;
+	bottom: 50px;
+	right: 10px;
+	display: none;
+}
+/*go to top end*/
+
 /* projects start*/
 .cont-proj{
 	margin: 40px 0px;
@@ -259,6 +270,10 @@ hr{
 	width: 90%;
     margin: 0 auto;
 }
+.inside-1 p:nth-child(1) , p:nth-child(2){
+	display: inline;
+	margin-left: 50px;
+}
 .title-1{
 	width: 100%;
 	height: 20%;
@@ -274,6 +289,9 @@ hr{
 }
 .fa-instagram:hover{
 	color:#262626;
+}
+.fa-github:hover{
+	color: #000;
 }
 i{
 	color: #ECECC6;
@@ -304,7 +322,6 @@ footer{
 	.menu{display:block;width: 100%;height: 30px;background-color: rgba(211, 212, 233, 0.46);}
 	.mob-nav{display:block;height: 30px;width: 30px;float: right;margin-right: 10px;}
 	.menu-nav{width: 100%;height: auto;}
-
 	li:first-child{float: none;}
 	li{display: block;list-style: none;text-align: right; font-size: 1.25em;border-top: 1px solid rgb(65, 131, 215);}
 	/*jerry's section*/
@@ -333,6 +350,9 @@ footer{
 	.project{width: 90%;display: block;margin: 10px 15px;}	
 	.proj-section p {font-size: 2em;}
 	.project h3{font-size: 1.75em}
+
+	/*go-top button*/
+	.go-top img{display: block;}
 
 	/*contacts*/
 	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
@@ -381,6 +401,9 @@ footer{
 	.proj-section p {font-size: 1.25em;}
 	.project h3{font-size: 1.75em}
 
+	/*go-top button*/
+	.go-top img{display: block;}
+
 	/*contacts*/
 	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
 	.contact-me{width: 100%;font-size: 1.5em;margin: 0 auto;}
@@ -396,11 +419,9 @@ footer{
 	body{font-size: 12px;}
 	/*nav bar*/
 	nav{display: none;}
-
 	.menu{display:block;width: 100%;height: 50px;background-color: rgba(211, 212, 233, 0.46);}
 	.mob-nav{display:block;height: 50px;width: 50px;float: right;margin-right: 10px;}
 	.menu-nav{width: 100%;height: auto;}
-
 	li:first-child{float: none;}
 	li{display: block;list-style: none;text-align: right;font-size: 1.5em;border-top: 1px solid rgb(65, 131, 215);}
 	/*jerry's section*/
@@ -429,6 +450,9 @@ footer{
 	.project{border: 3px solid black;padding: 0 10px;margin:5px 20px;width: 40%;display: inline-block;}	
 	.proj-section p {font-size: 1.55em;}
 	.project h3{font-size: 1.75em}
+
+	/*go-top button*/
+	.go-top img{display: block;}
 
 	/*contacts*/
 	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
@@ -483,7 +507,6 @@ footer{
 	/*footer*/
 	footer{font-size: 3.5em;margin-top: 20px;}
 }
-
 
 @media only screen and (max-width:1900px) and (min-width: 1600px){
 	body{font-size: 14px;}
@@ -564,4 +587,3 @@ footer{
 	/*footer*/
 	footer{font-size: 3.5em;margin-top: 20px;}
 }
-
