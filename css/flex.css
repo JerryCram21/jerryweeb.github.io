@@ -7,7 +7,8 @@ body, html{
 	padding: 0;
 	border: 0;
 	font-family: 'Sedgwick Ave Display', sans-serif;
-    background-color: #001f3f;
+    /*background-color: #001f3f;*/
+    background:radial-gradient(#001f3f,#001f12);
     color: rgb(133, 185, 239);
     /*color: #70d7ff;*/
 	height: 100%;
@@ -43,6 +44,7 @@ height: auto;
 .name{
 	font-size: 7em;
 	margin-top: 130px;
+	font-family: "AR BLANCA", serif;
 }
 .what{
 	font-size: 2.75em;
@@ -229,7 +231,7 @@ hr{
 /* projects end*/
 
 /*contact start*/
-.container{
+/*.container{
 	font-family: 'Sedgwick Ave Display', sans-serif;
 }
 .contact{
@@ -243,7 +245,7 @@ hr{
 	width: 100%;
 	height: auto;
 	text-align: center;
-	/*background-color: green;*/
+	/*background-color: green;
 }
 .contact-me , .follow-me{
 	width: 50%;
@@ -264,7 +266,7 @@ hr{
 	margin-left: 40px;
 	margin-top: 0.75em;
 	background-color: orange;
-	border-right: 20px dotted red;*/
+	border-right: 20px dotted red;
 }
 .inside-1{
 	width: 90%;
@@ -279,19 +281,46 @@ hr{
 	height: 20%;
 	text-align: center;
 	font-size: 2.25em;
-	/*background-color: chocolate;*/
+	/*background-color: chocolate;
+}*/
+.row-1{
+	text-align: center;
+	width: 33%;
+	height: auto;
+	float: left;
 }
-.fa-facebook:hover{
-	color: #3b5998;
+.col-1{
+	width: 67%;
 }
-.fa-twitter:hover{
-	color:#1DA1F2;
+p{
+	font-size: 1.5em;
 }
-.fa-instagram:hover{
-	color:#262626;
+.side{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-top: 15%;
 }
-.fa-github:hover{
-	color: #000;
+span{
+	width: 100%;
+}
+span img{
+	width: 30%;
+	margin: 0 auto;
+}
+#map {
+	height: 400px;
+	width: 100%;
+}
+.row-2{
+	width: 50%;
+	float: left;
+}
+.row-foot{
+	text-align: center;
+	font-size: 0.70em;
+	width: 100%;
+	margin: 50px auto 0 auto;
 }
 i{
 	color: #ECECC6;
