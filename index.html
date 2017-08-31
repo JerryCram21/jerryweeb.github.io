@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jerry Hermoso">
+  <meta name="description" content="Personal Web Portfolio">
   <title>Personal Web Portfolio</title>
 
   
@@ -124,7 +126,7 @@
           <div class="proj">
             <img src="img/rex.png" alt="First ever website">
             </div>
-            <div class="proj-section"><p><i>My intern project</i>. It was a month long internship program and the project is due before the internship ends. I thought its gonna be easy since I know already the bootstrap template but the instruction was not to use any templates and must be a mobile responsive page. I finished it through self-learning and help from the web developer there, I learned mobile responsive using @media and not depending on bootstrap templates.</p>
+            <div class="proj-section"><p><i>My intern project</i>. It was a month long internship program and the project is due before the internship ends. I thought its gonna easy since I know already the bootstrap template but the instruction was not to use any templates and must be a mobile responsive page. I finished it through self-learning and help from the web developer there, I learned mobile responsive using @media and not depending on bootstrap templates.</p>
             </div>
             <div class="foot">
               <h5><a href="https://jerrycram21.github.io/rexmiswifi.github.io/" target="_blank">VIEW MY WORK</a></h5>
@@ -151,7 +153,7 @@
     </div>
   </section>
 
-  <!--Contact Me-->
+  <!--Contact Me
   <article id="contact-me" class="container clearfix">
   <div class="contact">
     <div class="cont contact-me">
@@ -186,7 +188,65 @@
   </article>
   <footer>
     &copy Jerry Marc T. Hermoso • Portfolio Website • 2017
-</footer>
+  </footer-->
+
+  <!---new contact page-->
+  <article id="contact-me" class="container clearfix">
+    <div class="row-1">
+    <p>Email and Curriculum Vitae</p>
+      <div class="side">
+      <span><a href="mailto:jerrymarc.hermoso@gmail.com" target="_top" alt="email me"> <img src="img/icons/email.png"></a></span>
+      <span><a href="cv_jmth.pdf" target="_blank"><img src="img/icons/cv.png"></a></span>
+        <!--hover name-->
+      </div>
+    </div>
+    <div class="row-1 col-1">
+    <p>Address: 251-D Prudencio St. Sampaloc, Manila</p>
+      <div id="map"></div>
+    </div>
+    
+  </article>
+
+  <footer class="clearfix">
+    <div class="row-2">
+      <div class="row-foot">
+        &copy Jerry Marc T. Hermoso • Portfolio Website • 2017
+      </div>
+    </div>
+    <div class="row-2">
+      <div class="row-foot" style="margin-top: 30px;">
+        <a href="https://www.facebook.com/jerrymate.tolentino" target="_blank"><img src="img/icons/facebook.png" class="fb"></a>
+        
+        <a href="https://twitter.com/jerrymarc"" target="_blank""><img src="img/icons/twitter.png"></a>
+        
+        <a href="https://www.instagram.com/meeeeeyyyyytttt/" target="_blank""><img src="img/icons/instagram.png"></a>
+        
+        <a href="https://github.com/JerryCram21"" target="_blank""><img src="img/icons/github.png"></a>
+        
+        <a href="https://www.linkedin.com/in/jerry-marc-hermoso-b5a23b147/" target="_blank""><img src="img/icons/linkedin.png"></a>
+
+        <a href="https://www.youtube.com/channel/UCvfgi-U3r33O4ITy4N5uVww?view_as=subscriber" target="_blank""><img src="img/icons/youtube.png"></a>
+        
+      </div>
+    </div>
+  </footer>
+
+<script>
+      function initMap() {
+        var prudencio = {lat: 14.6062023, lng: 121.00190309999994};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom:15,
+          center: prudencio
+        });
+        var marker = new google.maps.Marker({
+          position: prudencio,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWCOzqicPplI4HL8nBv5tf-lQnFutmuxY&callback=initMap">
+    </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
