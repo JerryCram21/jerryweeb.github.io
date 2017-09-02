@@ -384,14 +384,19 @@ footer{
 	.go-top img{display: block;}
 
 	/*contacts*/
-	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
-	.contact-me{width: 100%;font-size: 1.5em;margin: 0 auto;}
-	.title-1{margin: 0 auto; font-size: 2.25em;}
-	.inside-1{width: 100%;margin: 0px;float: none;}
-	.follow-me{margin: 0 auto;}
+	.row-1{width: 80%;float: none;margin: 0 auto;}
+	.col-1{width: 80%;}
+	p{font-size: 3.5em;}
+	.side{padding-top: 0;}
+	span{}
+	span img{width: 40%;}
+	#map {}
+	.row-2{width: 100%;float: none;}
+	.row-foot{margin-top: 0;font-size: 1em;}
+	.row-foot img{width:10%;}
 
 	/*footer*/
-	footer{font-size: 2.5em;margin-top: 0px;}
+	footer{font-size: 2.25em;margin-top: 0px;}
 }
 
 @media only screen and (max-width:480px) and (min-width: 321px){
@@ -434,11 +439,15 @@ footer{
 	.go-top img{display: block;}
 
 	/*contacts*/
-	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
-	.contact-me{width: 100%;font-size: 1.5em;margin: 0 auto;}
-	.title-1{margin: 0 auto; font-size: 2.25em;}
-	.inside-1{width: 100%;margin: 0px;float: none;}
-	.follow-me{margin: 0 auto;}
+	.row-1{}
+	.col-1{}
+	p{font-size: 1.6em;}
+	.side{padding-top: 0;}
+	span{}
+	span img{width: 60%;}
+	#map {}
+	.row-2{width: 100%;float: none;}
+	.row-foot{margin: 0;}
 
 	/*footer*/
 	footer{font-size: 2.5em;margin-top: 0px;}
@@ -484,11 +493,11 @@ footer{
 	.go-top img{display: block;}
 
 	/*contacts*/
-	.cont{display: inline-block;text-align: center;height: 100%;width: 100%;font-size: 1.7em;}
-	.contact-me{width: 100%;font-size: 1.5em;margin: 0 auto;}
-	.title-1{margin: 0 auto; font-size: 2.25em;}
-	.inside-1{width: 100%;margin: 0px;float: none;}
-	.follow-me{margin: 0 auto;}
+	p{font-size: 1.6em;}
+	.side{padding-top: 0;}
+	span img{width: 60%;}
+	.row-2{width: 100%;float: none;}
+	.row-foot{margin: 0;}
 
 	/*footer*/
 	footer{font-size: 2.5em;margin-top: 0px;}
@@ -498,7 +507,7 @@ footer{
 	body{font-size: 12px;}
 
 	/*nav bar*/
-	ul{font-size: 3em;}
+	ul{font-size: 4em;}
 	li{padding: 0 10px;}
 
 	/*jerry's section*/
@@ -521,23 +530,20 @@ footer{
 	.container-2{display: inline-block;}
 	.cont-project{margin: 0 10px;}
 	.project{border: 3px solid black;padding: 0 30px;margin-left: 80px;width: 35%;display: inline-block;}	
-	.proj-section p {font-size: 1.25em;}
+	.proj-section p {font-size: 1.4em;}
 	.project h3{font-size: 1.75em}
 	
 	/*contacts*/
-	.cont{margin:0 20px;}
-	/*.contact-me{width: 100%;font-size: 1.7em;margin: 0 auto;}
-	.title-1{width:60%; margin: 0 auto; font-size: 2.25em;}*/
-	.inside-1{float: left; font-size: 1.3em;margin:0;width:100%;}
-	.contact-me, .follow-me {width: 45%;}
-	/*.inside-1 p{margin: 0;}
-	.follow-me{margin: 0 auto;}*/
+	p{font-size: 2em;}
+	.side{padding-top: 0;}
+	span img{width: 50%;}
+	.row-foot{font-size: 0.5em;}
 
 	/*footer*/
 	footer{font-size: 3.5em;margin-top: 20px;}
 }
 
-@media only screen and (max-width:1900px) and (min-width: 1600px){
+@media only screen and (max-width:1900px) and (min-width: 1400px){
 	body{font-size: 14px;}
 
 	/*nav bar*/
@@ -565,13 +571,11 @@ footer{
 	.project h3{font-size: 1.75em}
 	
 	/*contacts*/
-	.cont{margin:0 20px;}
-	/*.contact-me{width: 100%;font-size: 1.7em;margin: 0 auto;}
-	.title-1{width:60%; margin: 0 auto; font-size: 2.25em;}*/
-	.inside-1{float: left; font-size: 1.3em;margin:0;width:100%;}
-	.contact-me, .follow-me {width: 45%;}
-	/*.inside-1 p{margin: 0;}
-	.follow-me{margin: 0 auto;}*/
+	p{font-size: 2em;}
+	.side{padding-top: 0;}
+	span img{width: 40%;}
+	.row-foot{font-size: 0.6em;}
+	.row-foot img{width:15%;}
 
 	/*footer*/
 	footer{font-size: 3.5em;margin-top: 20px;}
@@ -605,13 +609,10 @@ footer{
 	.project h3{font-size: 1.75em}
 	
 	/*contacts*/
-	.cont{margin:0 20px;}
-	/*.contact-me{width: 100%;font-size: 1.7em;margin: 0 auto;}
-	.title-1{width:60%; margin: 0 auto; font-size: 2.25em;}*/
-	.inside-1{float: left; font-size: 1.3em;margin:0;width:100%;}
-	.contact-me, .follow-me {width: 45%;}
-	/*.inside-1 p{margin: 0;}
-	.follow-me{margin: 0 auto;}*/
+	p{font-size: 2em;}
+	.side{padding-top: 0;}
+	span img{width: 50%;}
+	.row-foot{font-size: 0.5em;}
 
 	/*footer*/
 	footer{font-size: 3.5em;margin-top: 20px;}
